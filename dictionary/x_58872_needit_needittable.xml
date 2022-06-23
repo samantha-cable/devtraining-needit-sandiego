@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedItTable" max_length="40" name="x_58872_needit_needittable" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" mandatory="true" max_length="40" name="u_new_choice" type="string">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="0" value="None"/>
+                <element inactive_on_update="false" label="Service Desk" sequence="1" value="Service Desk"/>
+                <element inactive_on_update="false" label="Desktop" sequence="2" value="Desktop"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
